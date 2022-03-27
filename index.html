@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Evaluation System</title>
+    <style type="text/css">
+    button{
+        background-color: yellow;
+        border: 3px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #texto{
+        width: 320px;
+    }
+    .hide{
+        display: none;
+    }
+    fieldset{
+        width: max-content;
+        background-color: gold;
+    }
+    </style>
+</head>
+<body>
+    <center>
+        <form>
+            <fieldset>
+        <b><strong><legend>Nome:</legend></strong></b> <input type="text" id="texto"/> <br>
+        <b><strong><legend>Turma:</legend></strong></b> <select name="sel" id="selecao"> 
+        <option value="1º Informática">1º Informática</option>
+        <option value="2º Informática">2º Informática</option>
+        <option value="3º Informática">3º Informática</option>
+        <option value="1º Administração">1º Administração</option>
+        <option value="2º Administração">2º Administração</option>
+        <option value="3º Administração">3º Administração</option>
+        <option value="1º Enfermagem">1º Enfermagem</option>
+        <option value="2º Enfermagem">2º Enfermagem</option>
+        <option value="3º Enfermagem">3º Enfermagem</option>
+        </select>
+        <br>
+        <strong><legend>01. Quais cursos são ofertados na EEEP Amélia Figueiredo de Lavor?</legend></strong><br>
+        <textarea name="tex1" id="texto2" cols="60" rows="10"></textarea> <br>
+        <br>
+        <strong><legend></b> 02. Marque as opções que possui os sistemas de numerações novos que
+        <br> aprendemos no 1º de Informática.</legend></strong>
+        <br>Sistema Octal <input type="checkbox" id="check1"> 
+        <br>Sistema Binário <input type="checkbox" id="check2"> 
+        <br>Sistema Decimal <input type="checkbox" id="check3"> 
+        <br>Algarismos Hexadecimal <input type="checkbox" id="check4">
+        <br> 
+        <br>
+        <strong><legend><b>03. Qual o produto abaixo é mais adequado para limpar uma memória RAM?</legend></strong><br></b>
+        <label for="isopropilico">Álcool Isopropílico</label>
+        <input type="radio" name="+adequado" id="isopropilico"> <br>
+        <label for="contato">Limpa Contato</label>
+        <input type="radio" name="+adequado" id="contato"> <br>
+        <label for="alcool">Álcool 70%</label>
+        <input type="radio" name="+adequado" id="alcool"> <br>
+        <label for="agua">Água</label> 
+        <input type="radio" name="+adequado" id="agua"> <br>
+        <br>
+        <strong><legend><b> 04. Podemos afirmar que o modo de funcionamento de memória RAM em <br>
+        DUAL CHANEL só pode ser feito com pares de módulos de memória. </legend></strong></b>
+        <strong><legend> Essa afirmativa é: </legend></strong></b><br>
+        <label for="true">Verdadeira</label>
+        <input type="radio" name="booleano" id="true"> <br>
+        <label for="false">Falsa</label> 
+        <input type="radio" name="booleano" id="false"> <br>
+        <br>
+        <button type="button" onclick="corrigir()"><b>Corrigir</b></button>
+        <br>
+        </fieldset>
+        <br>
+        <fieldset class="hide">
+            <center><legend><b>Respostas</b></legend>
+            <div id="nome"></div>
+            <div id="turma"></div>
+            <div id="questao01"></div>
+            <div id="questao02.1"></div>
+            <div id="questao02.2"></div>
+            <div id="questao02.3"></div>
+            <div id="questao02.4"></div>
+            <div id="questao03"></div>
+            <div id="questao04"></div>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
